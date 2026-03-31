@@ -2,24 +2,25 @@ import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 
 export default function MainPage() {
-    return(
+    return (
         <>
-            <div className="flex flex-col max-w-[880px] my-10 mx-auto h-auto">
-               <HeroSection />
-                
-                <div className="flex">
-                    <div>
-                        <AboutSection />
-                         <span className="bg-blue-100">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut qui sunt. Harum ducimus quidem quae temporibus iure distinctio magnam assumenda quo reiciendis cupiditate rerum, voluptatem excepturi commodi tempore tenetur.
-                        </span>
-                    </div>
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-x-3 max-w-[880px] my-10 mx-auto h-auto">
 
-
-                    <span className="max-w-[280px]">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut qui sunt. Harum ducimus quidem quae temporibus iure distinctio magnam assumenda quo reiciendis cupiditate rerum, voluptatem excepturi commodi tempore tenetur.
-                    </span>
+                <div className="order-1 col-span-2 mb-5">
+                    <HeroSection />
                 </div>
+
+                <div className="flex flex-col order-2">
+                    <AboutSection />
+
+                </div>
+
+                <div className="flex flex-col bg-yellow-100 order-3">
+                    <span className="order-3 max-w-[280px]">
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quod ullam adipisci deleniti animi vel, quibusdam mollitia aut beatae sapiente. Eum obcaecati eaque expedita sed iure nostrum libero magnam odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut qui sunt. Harum ducimus quidem quae temporibus iure distinctio magnam assumenda quo reiciendis cupiditate rerum, voluptatem excepturi commodi tempore tenetur.
+                </span>
+                </div>
+
             </div>
         </>
     );
