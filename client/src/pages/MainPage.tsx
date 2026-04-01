@@ -1,5 +1,6 @@
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
+import TechStack from "../components/TechStack";
 
 export default function MainPage() {
     return (
@@ -10,9 +11,9 @@ export default function MainPage() {
                     <HeroSection />
                 </div>
 
-                <div className="flex flex-col order-2">
+                <div className="flex flex-col gap-y-3 order-2">
                     <AboutSection />
-
+                    <TechStack />
                 </div>
 
                 <div className="flex flex-col bg-yellow-100 order-3">
