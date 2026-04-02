@@ -14,7 +14,7 @@ export default function TechStackSection() {
         <>
             <div className="animate-fade-up shadow-xs-bottom p-4">
                 <div className="flex items-center justify-between ">
-                    <h1 className="text-lg font-semibold mb-3">Tech Stack</h1>
+                    <h1 className="text-lg font-semibold">Tech Stack</h1>
 
                     <button className="flex items-center justify-center gap-x-1 cursor-pointer">
                         <span className="text-xs">View All</span>
@@ -23,7 +23,7 @@ export default function TechStackSection() {
 
                 </div>
 
-                <div className="flex flex-col gap-y-3.5 mb-4">
+                <div className="flex flex-col gap-y-3.5 mb-4 mt-3">
                     <h2 className="text-sm font-semibold">Frontend</h2>
                     <div className="flex gap-x-2">
                         <TechStackCard techStack="JavaScript" />

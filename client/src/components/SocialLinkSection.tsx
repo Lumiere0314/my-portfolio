@@ -14,7 +14,7 @@ export default function SocialLinkSection() {
                         <img src={GitHub} alt="GitHub" className="w-9 h-9 object-cover" />
                         <div className="flex items-start flex-col">
                             <span className="text-sm font-medium">GitHub</span>
-                            <span className="text-xs">@Lumiere0314</span>
+                            <span className="text-xs">@jpsoriaga</span>
                         </div>
                     </div>
                     <ChevronRight size={16} />

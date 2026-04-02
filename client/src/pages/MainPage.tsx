@@ -9,7 +9,7 @@ import ProjectSection from "../components/ProjectSection";
 export default function MainPage() {
     return (
         <>
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-x-3 max-w-[880px] my-10 mx-auto h-auto">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_280px] gap-x-3 max-w-[880px] my-10 mx-auto ">
 
                 <div className="order-1 col-span-2 mb-5">
                     <HeroSection />
@@ -27,12 +27,12 @@ export default function MainPage() {
                 
                 </div>
 
-                <div className="flex gap-x-3 order-4 h-10 col-span-2">
-                    <div className="w-1/2">
+                <div className="flex gap-x-3 order-4 mt-3 col-span-2">
+                    <div className="w-[60%]">
                         <ProjectSection />
                     </div>
 
-                    <div className="w-1/2">
+                    <div className="w-[40%]">
                         <CertificateSection />
                     </div>
                    
