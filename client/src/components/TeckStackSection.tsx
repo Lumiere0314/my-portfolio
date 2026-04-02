@@ -1,6 +1,6 @@
 import { ChevronRight } from 'lucide-react';
 
-export default function TechStack() {
+export default function TechStackSection() {
 
     const TechStackCard = ({ techStack }: { techStack: string }) => {
         return (
