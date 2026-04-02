@@ -23,7 +23,7 @@ export default function TechStackSection() {
 
                 </div>
 
-                <div className="flex flex-col gap-y-2">
+                <div className="flex flex-col gap-y-3.5 mb-4">
                     <h2 className="text-sm font-semibold">Frontend</h2>
                     <div className="flex gap-x-2">
                         <TechStackCard techStack="JavaScript" />
@@ -35,7 +35,6 @@ export default function TechStackSection() {
                     <h2 className="text-sm font-semibold mt-2">Backend</h2>
                     <div className="flex gap-x-2">
                         <TechStackCard techStack="Node.js" />
-                        <TechStackCard techStack="Java" />
                         <TechStackCard techStack="Express.js" />
                         <TechStackCard techStack="NestJS" />
                         <TechStackCard techStack="Java" />

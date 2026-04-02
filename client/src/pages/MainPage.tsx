@@ -4,6 +4,7 @@ import TechStackSection from "../components/TeckStackSection";
 import EducationSection from "../components/EducationSection";
 import CertificateSection from "../components/CertificateSection";
 import SocialLinkSection from "../components/SocialLinkSection";
+import ProjectSection from "../components/ProjectSection";
 
 export default function MainPage() {
     return (
@@ -17,13 +18,24 @@ export default function MainPage() {
                 <div className="flex flex-col gap-y-3 order-2">
                     <AboutSection />
                     <TechStackSection />
-                    <CertificateSection />
                 </div>
 
                 
                 <div className="flex flex-col gap-y-3 order-3">
                     <EducationSection />
                     <SocialLinkSection />
+                
+                </div>
+
+                <div className="flex gap-x-3 order-4 h-10 col-span-2">
+                    <div className="w-1/2">
+                        <ProjectSection />
+                    </div>
+
+                    <div className="w-1/2">
+                        <CertificateSection />
+                    </div>
+                   
                 </div>
 
             </div>
