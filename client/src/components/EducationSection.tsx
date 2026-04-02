@@ -1,9 +1,9 @@
 export default function EducationSection() {
     const education = [
-        { title: "BS Information Technology", school: "Bulacan State University", active: true },
-        { title: "Senior High School", school: "La Consolacion University Philippines" },
-        { title: "High School", school: "Bajet Castillo High School" },
-        { title: "Elementary", school: "Sto. Cristo Elementary School" },
+        { title: "BS Information Technology", school: "Bulacan State University", year: "2028", active: true },
+        { title: "Senior High School", school: "La Consolacion University Philippines", year: "2023" },
+        { title: "High School", school: "Bajet Castillo High School", year: "2021" },
+        { title: "Elementary", school: "Sto. Cristo Elementary School", year: "2018" },
     ];
 
     return (
@@ -27,8 +27,11 @@ export default function EducationSection() {
                         />
 
                         <div className="ml-7">
-                            <h2 className="text-sm font-medium">{item.title}</h2>
-                            <p className="text-xs text-gray-500">{item.school}</p>
+                            <h2 className="text-sm font-medium mb-1.5">{item.title}</h2>
+                            <div className="flex justify-between gap-x-1">
+                                <p className="text-xs line-clamp-2">{item.school}</p>
+                                <p className="text-xs">{item.year}</p>
+                            </div>
                         </div>
 
                     </div>
