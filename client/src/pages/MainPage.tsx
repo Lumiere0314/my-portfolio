@@ -2,6 +2,8 @@ import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import TechStackSection from "../components/TeckStackSection";
 import EducationSection from "../components/EducationSection";
+import CertificateSection from "../components/CertificateSection";
+import SocialLinkSection from "../components/SocialLinkSection";
 
 export default function MainPage() {
     return (
@@ -15,12 +17,13 @@ export default function MainPage() {
                 <div className="flex flex-col gap-y-3 order-2">
                     <AboutSection />
                     <TechStackSection />
+                    <CertificateSection />
                 </div>
 
                 
                 <div className="flex flex-col gap-y-3 order-3">
                     <EducationSection />
-                    <h1>hi</h1>
+                    <SocialLinkSection />
                 </div>
 
             </div>
