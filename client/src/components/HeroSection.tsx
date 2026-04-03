@@ -40,12 +40,12 @@ export default function HeroSection() {
                     <h1 className="font-normal tracking-wide my-3">BSIT Student <span className="text-gray-400">\</span> Aspiring Web Developer</h1>
 
                     <div className="flex gap-x-3">
-                        <button className="flex items-center justify-center gap-x-2 bg-black py-2 px-3 rounded-xs cursor-pointer">
+                        <button className="flex transition-all duration-400 ease-out hover:-translate-y-1 items-center justify-center gap-x-2 bg-black py-2 px-3 rounded-xs cursor-pointer">
                             <FileText className="text-white" size={14} />
                             <span className="text-sm text-white">View Resume</span>
                         </button>
 
-                        <button className="flex items-center justify-center gap-x-2 py-2 px-3 rounded-xs shadow-sm cursor-pointer">
+                        <button className="flex transition-all duration-400 ease-out hover:-translate-y-1 hover:shadow-sm items-center justify-center gap-x-2 py-2 px-3 rounded-xs shadow-xs-bottom cursor-pointer">
                             <Mail size={14} />
                             <span className="text-sm">Send Email</span>
                         </button>
