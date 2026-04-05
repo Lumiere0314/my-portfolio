@@ -13,7 +13,7 @@ export default function SocialLinkSection({ dark }: { dark: boolean }) {
 
     return (
         <>
-            <div className="dark-bg-container hover:-translate-y-2 shadow-xs-bottom max-w-[280px] p-4 animate-fade-up">
+            <div className="dark-bg-container hover:-translate-y-2 shadow-xs-bottom md:max-w-[280px] p-4 animate-fade-up">
                 <h1 className="dark:text-white text-lg font-semibold mb-3">Social Links</h1>
 
                 <div className="flex flex-col gap-y-5">

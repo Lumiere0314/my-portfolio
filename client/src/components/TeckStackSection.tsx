@@ -25,7 +25,7 @@ export default function TechStackSection({ isMoreThan5Lines }: { isMoreThan5Line
 
                 <div className={`flex flex-col gap-y-3.5 mt-3 ${isMoreThan5Lines ? "mb-1" : "mb-3.5"}`}>
                     <h2 className="dark:text-white text-sm font-semibold">Frontend</h2>
-                    <div className="flex gap-x-2">
+                    <div className="flex flex-wrap gap-x-2">
                         <TechStackCard techStack="JavaScript" />
                         <TechStackCard techStack="TypeScript" />
                         <TechStackCard techStack="React" />
@@ -33,7 +33,7 @@ export default function TechStackSection({ isMoreThan5Lines }: { isMoreThan5Line
                     </div>
 
                     <h2 className="dark:text-white text-sm font-semibold mt-2">Backend</h2>
-                    <div className="flex gap-x-2">
+                    <div className="flex flex-wrap gap-2">
                         <TechStackCard techStack="Node.js" />
                         <TechStackCard techStack="Express.js" />
                         <TechStackCard techStack="NestJS" />
@@ -43,7 +43,7 @@ export default function TechStackSection({ isMoreThan5Lines }: { isMoreThan5Line
                     </div>
 
                     <h2 className="dark:text-white text-sm font-semibold mt-2">Developer Tools</h2>
-                    <div className="flex gap-x-2">
+                    <div className="flex flex-wrap gap-x-2">
                         <TechStackCard techStack="Git" />
                         <TechStackCard techStack="GitHub" />
                         <TechStackCard techStack="VS Code" />

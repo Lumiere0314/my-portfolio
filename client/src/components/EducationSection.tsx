@@ -7,7 +7,7 @@ export default function EducationSection() {
     ];
 
     return (
-        <div className="dark:bg-[#111111] transition-all duration-400 ease-out hover:-translate-y-2 shadow-xs-bottom max-w-[280px] p-4 animate-fade-up">
+        <div className="dark:bg-[#111111] transition-all duration-400 ease-out hover:-translate-y-2 shadow-xs-bottom md:max-w-[280px] p-4 animate-fade-up">
             
             <h1 className="dark:text-white text-lg font-semibold">Education</h1>
 
