@@ -5,20 +5,46 @@ import EducationSection from "../components/EducationSection";
 import CertificateSection from "../components/CertificateSection";
 import SocialLinkSection from "../components/SocialLinkSection";
 import ProjectSection from "../components/ProjectSection";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function MainPage() {
-    const [dark, setDark] = useState(false);
+    const [dark, setDark] = useState(() => {
+           const savedTheme = localStorage.getItem("theme");
+           return savedTheme === "dark";
+    });
+    const [isMoreThan5Lines, setIsMoreThan5Lines] = useState(false);
 
     useEffect(()=> {
         const root = document.documentElement;
 
         if(dark) {
             root.classList.add("dark");
+            localStorage.setItem("theme", "dark");
         } else {
             root.classList.remove("dark");
+            localStorage.setItem("theme", "light");
         }
     }, [dark]);
+
+        const textRef = useRef<HTMLParagraphElement | null>(null);
+    
+        useEffect(() => {
+            const el = textRef.current;
+            if (!el) return;
+    
+            const style = window.getComputedStyle(el);
+    
+            const lineHeight = parseFloat(style.lineHeight);
+            const height = el.scrollHeight;
+    
+            const lines = Math.ceil(height / lineHeight);
+    
+            console.log("Lines:", lines);
+    
+            if (lines >= 6) {
+                setIsMoreThan5Lines(true);
+            }
+        }, []);
 
     return (
         <>
@@ -29,8 +55,8 @@ export default function MainPage() {
                 </div>
 
                 <div className="flex flex-col gap-y-3 order-2">
-                    <AboutSection />
-                    <TechStackSection />
+                    <AboutSection textRef={textRef} isMoreThan5Lines={isMoreThan5Lines} />
+                    <TechStackSection isMoreThan5Lines={isMoreThan5Lines} />
                 </div>
 
                 

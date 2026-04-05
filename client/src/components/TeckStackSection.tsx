@@ -1,6 +1,6 @@
 import { ChevronRight } from 'lucide-react';
 
-export default function TechStackSection() {
+export default function TechStackSection({ isMoreThan5Lines }: { isMoreThan5Lines: boolean }) {
 
     const TechStackCard = ({ techStack }: { techStack: string }) => {
         return (
@@ -18,12 +18,12 @@ export default function TechStackSection() {
 
                     <button className="flex items-center justify-center gap-x-1 cursor-pointer">
                         <span className="dark:text-white text-xs">View All</span>
-                        <ChevronRight size={14} />
+                        <ChevronRight className='dark:text-white' size={14} />
                     </button>
 
                 </div>
 
-                <div className="flex flex-col gap-y-3.5 mb-4 mt-3">
+                <div className={`flex flex-col gap-y-3.5 mt-3 ${isMoreThan5Lines ? "mb-1" : "mb-3.5"}`}>
                     <h2 className="dark:text-white text-sm font-semibold">Frontend</h2>
                     <div className="flex gap-x-2">
                         <TechStackCard techStack="JavaScript" />
